@@ -3,8 +3,18 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('title');
     table.string('image_url');
-    table.integer('auditor_id').references('auditors.id');
-    table.integer('spool_piece_id').references('spool_pieces.id');
+    table
+      .integer('auditor_id')
+      .references('auditors.id')
+      .notNullable();
+    table
+      .integer('user_id')
+      .references('users.id')
+      .notNullable();
+    table
+      .integer('spool_piece_id')
+      .references('spool_pieces.id')
+      .notNullable();
     table.timestamps(true, true);
   });
 };
