@@ -17,8 +17,8 @@ class Project extends bookshelf.Model {
     return this.belongsTo('User', 'user_id');
   }
 
-  spool_pieces() {
-    return this.hasMany('Spool', 'spool_piece_id');
+  spoolPieces() {
+    return this.hasMany('Spool_Piece', 'project_id');
   }
 }
 
