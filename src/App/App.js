@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { PageHeader } from 'react-bootstrap';
 import Navbar from '../Navbar/';
+import MainContainer from '../MainContainer';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -22,8 +23,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PageHeader>HTT Project Management</PageHeader>
+        <PageHeader>HTT Project Management App</PageHeader>
         <Navbar />
+        <MainContainer />
       </div>
     );
   }
