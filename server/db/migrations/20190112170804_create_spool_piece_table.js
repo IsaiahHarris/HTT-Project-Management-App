@@ -3,6 +3,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('title').notNullable();
     table.string('note');
+    table.string('image_url');
     table
       .string('requires_pt')
       .notNullable()
@@ -11,6 +12,10 @@ exports.up = function(knex, Promise) {
       .string('requires_xray')
       .notNullable()
       .defaultTo('false');
+    table
+      .integer('project_id')
+      .references('projects.id')
+      .notNullable();
     table.timestamps(true, true);
   });
 };

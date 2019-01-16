@@ -11,10 +11,6 @@ exports.up = function(knex, Promise) {
       .integer('user_id')
       .references('users.id')
       .notNullable();
-    table
-      .integer('spool_piece_id')
-      .references('spool_pieces.id')
-      .notNullable();
     table.timestamps(true, true);
   });
 };
