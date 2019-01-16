@@ -8,7 +8,8 @@ class Projects extends Component {
     super(props);
 
     this.state = {
-      projects: ''
+      projects: [],
+      image_url: ''
     };
   }
   componentDidMount() {
@@ -16,11 +17,18 @@ class Projects extends Component {
   }
 
   render() {
+    console.log(this.props.projects);
     return (
       <div className="projects-container">
         <div className="header">Project 1</div>
         <div className="body-container">
-          <img src="" alt="" className="project" />
+          {this.props.projects[0] && (
+            <img
+              src={this.props.projects[0].image_url}
+              alt=""
+              className="project"
+            />
+          )}
         </div>
       </div>
     );
@@ -28,9 +36,8 @@ class Projects extends Component {
 }
 
 const mapStateToProps = state => {
-  console.log(state.projectsList);
   return {
-    project: state.projectsList
+    projects: state.projectsList
   };
 };
 

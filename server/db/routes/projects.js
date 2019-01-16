@@ -5,7 +5,6 @@ const spoolPieces = require('../models/Spool_Piece');
 router.route('/').get((req, res) => {
   return Project.fetchAll({ withRelated: ['spoolPieces'] })
     .then(projects => {
-      console.log(projects);
       return res.json(projects);
     })
     .catch(err => {
