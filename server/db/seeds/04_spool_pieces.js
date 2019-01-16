@@ -7,7 +7,7 @@ exports.seed = function(knex, Promise) {
       return knex('spool_pieces').insert([
         {
           id: 1,
-          title: 'spool_piece_01',
+          title: 'spool piece 1',
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
@@ -16,7 +16,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 2,
-          title: 'spool_piece_02',
+          title: 'spool piece 2',
           note: 'Needs Penetrant Testing',
           requires_pt: 'true',
           requires_xray: 'false',
@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 3,
-          title: 'spool_piece_03',
+          title: 'spool piece 03',
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
@@ -35,7 +35,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 4,
-          title: 'spool_piece_04',
+          title: 'spool piece 04',
           note: '',
           requires_pt: 'false',
           requires_xray: 'false',

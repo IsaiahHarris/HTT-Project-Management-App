@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Image } from 'react-bootstrap';
 import { loadProjects } from '../actions';
-
+import './Projects.scss';
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -17,33 +17,44 @@ class Projects extends Component {
   }
 
   render() {
-    console.log(this.props.projects);
+    let project = this.props.projects[0];
     return (
       <div className="projects-container">
-        <div className="header">Project 1</div>
+        {project && <div className="header">{project.title}</div>}
         <div className="body-container">
           <div className="image-container">
-            {this.props.projects[0] && (
-              <img
-                src={this.props.projects[0].image_url}
+            {project && (
+              <Image
+                rounded
+                src={project.image_url}
                 alt=""
                 className="project"
               />
             )}
           </div>
+          {project && (
+            <div className="spool-header">Spool Pieces for {project.title}</div>
+          )}
           <div className="spool-pieces-container">
-            {this.props.projects[0] &&
-              this.props.projects[0].spoolPieces.map((piece, key) => {
-                console.log(piece);
-                return (
-                  <div className="spool-piece" key={key}>
-                    <div className="spool-piece-title">{piece.title}</div>
-                    <div className="spool-piece-img">
-                      <img src={piece.image_url} alt="" />
+            <div className="spool-pieces">
+              {project &&
+                project.spoolPieces.map((piece, key) => {
+                  console.log(piece);
+                  return (
+                    <div className="spool-piece" key={key}>
+                      <div className="spool-piece-title">{piece.title}</div>
+                      <div className="spool-piece-img-container">
+                        <Image
+                          rounded
+                          className="spool-piece-img"
+                          src={piece.image_url}
+                          alt=""
+                        />
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+            </div>
           </div>
         </div>
       </div>

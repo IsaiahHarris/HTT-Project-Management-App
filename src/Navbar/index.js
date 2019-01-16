@@ -19,7 +19,7 @@ class NavBar extends Component {
                 Projects
               </NavItem>
               <NavItem eventKey={2} href="/technicians">
-                Pieces
+                Technicians
               </NavItem>
               <NavDropdown
                 eventKey={3}
