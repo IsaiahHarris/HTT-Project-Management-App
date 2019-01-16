@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
 import { Nav, NavItem, Navbar, NavDropdown, MenuItem } from 'react-bootstrap';
-
+import './Navbar.scss';
 class NavBar extends Component {
   render() {
     return (
-      <div className="sidebar-container">
-        <Navbar inverse collapseOnSelect>
+      <div className="navbar-container">
+        <Navbar className="navbar" inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="/">Home</a>
@@ -15,11 +15,11 @@ class NavBar extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <NavItem eventKey={1} href="#">
-                Link
+              <NavItem className="nav-item" eventKey={1} href="/projects">
+                Projects
               </NavItem>
-              <NavItem eventKey={2} href="#">
-                Link
+              <NavItem eventKey={2} href="/technicians">
+                Pieces
               </NavItem>
               <NavDropdown
                 eventKey={3}
@@ -35,10 +35,10 @@ class NavBar extends Component {
             </Nav>
             <Nav pullRight>
               <NavItem eventKey={1} href="#">
-                Link Right
+                About
               </NavItem>
               <NavItem eventKey={2} href="#">
-                Link Right
+                Contact
               </NavItem>
             </Nav>
           </Navbar.Collapse>
