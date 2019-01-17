@@ -26,7 +26,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 3,
-          title: 'spool piece 03',
+          title: 'spool piece 3',
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
@@ -35,7 +35,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           id: 4,
-          title: 'spool piece 04',
+          title: 'spool piece 4',
           note: '',
           requires_pt: 'false',
           requires_xray: 'false',
