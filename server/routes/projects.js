@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Project = require('../models/Project');
-const spoolPieces = require('../models/Spool_Piece');
+const Project = require('../db/models/Project');
+const spoolPieces = require('../db/models/Spool_Piece');
 router.route('/').get((req, res) => {
   return Project.fetchAll({ withRelated: ['spoolPieces'] })
     .then(projects => {
