@@ -25,10 +25,11 @@ class Projects extends Component {
           <div className="image-container">
             {project && (
               <Image
+                responsive
                 rounded
                 src={project.image_url}
                 alt=""
-                className="project"
+                className="project-img"
               />
             )}
           </div>
@@ -39,18 +40,62 @@ class Projects extends Component {
             <div className="spool-pieces">
               {project &&
                 project.spoolPieces.map((piece, key) => {
-                  console.log(piece);
+                  console.log('piece.note', piece.note.length > 0);
                   return (
-                    <div className="spool-piece" key={key}>
-                      <div className="spool-piece-title">{piece.title}</div>
-                      <div className="spool-piece-img-container">
-                        <Image
-                          rounded
-                          className="spool-piece-img"
-                          src={piece.image_url}
-                          alt=""
-                        />
-                      </div>
+                    <div key={key}>
+                      {piece.requires_xray === 'false' &&
+                        piece.requires_pt === 'false' && (
+                          <div className="spool-piece">
+                            <div className="spool-piece-img-container">
+                              {/* <div
+                                className="spool-piece-img"
+                                style={{
+                                  backgroundImage:
+                                  'url(' + piece.image_url + ')'
+                                }}
+                              /> */}
+                              <Image
+                                responsive
+                                rounded
+                                src={piece.image_url}
+                                alt=""
+                                className="spool-piece-img"
+                              />
+                            </div>
+                            <div className="spool-piece-title">
+                              {piece.title}
+                            </div>
+                            {piece.note.length > 0 && (
+                              <div className="note">{piece.note}</div>
+                            )}
+                          </div>
+                        )}
+                      {(piece.requires_xray === 'true' ||
+                        piece.requires_pt === 'true') && (
+                        <div className="spool-piece">
+                          <div className="spool-piece-img-container">
+                            {/* <div
+                              className="spool-piece-img"
+                              style={{
+                                backgroundImage: 'url(' + piece.image_url + ')'
+                              }}
+                            /> */}
+                            <Image
+                              responsive
+                              rounded
+                              src={piece.image_url}
+                              alt=""
+                              className="spool-piece-img"
+                            />
+                          </div>
+                          <div className="faulty-spool-piece-title">
+                            {piece.title}
+                          </div>
+                          {piece.note.length > 0 && (
+                            <div className="note">{piece.note}</div>
+                          )}
+                        </div>
+                      )}
                     </div>
                   );
                 })}
