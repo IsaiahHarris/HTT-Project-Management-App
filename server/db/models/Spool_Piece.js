@@ -10,7 +10,7 @@ class Spool_Piece extends bookshelf.Model {
   }
 
   projects() {
-    return this.belongsTo('Project', 'spool_piece_id');
+    return this.belongsTo('Project', 'project_id');
   }
 }
 
