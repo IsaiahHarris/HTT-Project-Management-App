@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { Nav, NavItem, Navbar, NavDropdown, MenuItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Navbar.scss';
 class NavBar extends Component {
   render() {
@@ -9,7 +10,7 @@ class NavBar extends Component {
         <Navbar className="navbar" inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
@@ -34,8 +35,8 @@ class NavBar extends Component {
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">
-                About
+              <NavItem eventKey={1} href="/login">
+                Login
               </NavItem>
               <NavItem eventKey={2} href="#">
                 Contact
