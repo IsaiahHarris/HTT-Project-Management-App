@@ -1,8 +1,9 @@
 .projects-container {
+  font-family: 'Lato', sans-serif;
   .header {
-    font-size: 32px;
+    font-size: 34px;
     padding: 10px;
-    font-weight: bold;
+    font-weight: 900;
   }
   .body-container {
     display: flex;
@@ -13,14 +14,15 @@
       align-items: center;
       justify-content: center;
       .project-img {
-        height: 320px;
-        width: 600px;
+        height: 350px;
+        width: 650px;
       }
     }
     .spool-header {
-      font-size: 24px;
+      font-size: 26px;
       margin-top: 40px;
       margin-bottom: 10px;
+      font-weight: 900;
       @media (max-width: 767px) {
         font-size: 20px;
       }
@@ -36,6 +38,37 @@
         @media (max-width: 767px) {
           width: 80%;
         }
+        .faulty-spool-piece {
+          display: flex;
+          width: fit-content;
+          flex-direction: column;
+          align-items: center;
+          height: 85px;
+          .faulty-spool-piece-title {
+            font-size: 22px;
+            @media (max-width: 767px) {
+              font-size: 18px;
+            }
+          }
+          .faulty-spool-piece-title {
+            font-weight: 900;
+            font-size: 22px;
+            color: white;
+            @media (max-width: 767px) {
+              font-size: 16px;
+            }
+          }
+          .note {
+            font-size: 20px;
+          }
+          .spool-piece-img-container {
+            .spool-piece-img {
+              height: 50px;
+              width: 50px;
+              background-size: 100% 100%;
+            }
+          }
+        }
         .spool-piece {
           display: flex;
           width: fit-content;
@@ -43,25 +76,37 @@
           align-items: center;
           height: 85px;
           .spool-piece-title {
-            font-size: 20px;
+            font-size: 22px;
+            font-weight: 900;
+            @media (max-width: 767px) {
+              font-size: 18px;
+            }
+          }
+          .faulty-spool-piece-title {
+            font-weight: 900;
+            font-size: 22px;
+            color: white;
             @media (max-width: 767px) {
               font-size: 16px;
             }
           }
-          .faulty-spool-piece-title {
-            font-size: 20px;
-            color: red;
-            @media (max-width: 767px) {
-              font-size: 14px;
-            }
-          }
           .note {
-            font-size: 18px;
+            font-size: 20px;
+          }
+          .faulty-spool-piece-img-container {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 2px;
+            .spool-piece-img {
+              height: 65px;
+              width: 65px;
+              background-size: 100% 100%;
+            }
           }
           .spool-piece-img-container {
             .spool-piece-img {
-              height: 50px;
-              width: 50px;
+              height: 65px;
+              width: 65px;
               background-size: 100% 100%;
             }
           }

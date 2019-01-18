@@ -7,10 +7,6 @@ exports.up = function(knex, Promise) {
       .integer('auditor_id')
       .references('auditors.id')
       .notNullable();
-    table
-      .integer('user_id')
-      .references('users.id')
-      .notNullable();
     table.timestamps(true, true);
   });
 };

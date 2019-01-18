@@ -6,6 +6,11 @@ exports.up = function(knex, Promise) {
       .unique()
       .notNullable();
     table.string('password').notNullable();
+    table
+      .integer('project_id')
+      .references('projects.id')
+      .notNullable();
+    table.string('image_url');
     table.timestamps(true, true);
   });
 };

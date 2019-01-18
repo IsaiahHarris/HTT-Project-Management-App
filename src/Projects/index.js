@@ -73,7 +73,7 @@ class Projects extends Component {
                       {(piece.requires_xray === 'true' ||
                         piece.requires_pt === 'true') && (
                         <div className="spool-piece">
-                          <div className="spool-piece-img-container">
+                          <div className="faulty-spool-piece-img-container">
                             {/* <div
                               className="spool-piece-img"
                               style={{

@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
-          image_url: 'http://ceresist.com/wp-content/uploads/P9040046.jpg',
+          image_url: 'https://imgur.com/a/KOAhiD5',
           project_id: 1
         },
         {
@@ -20,8 +20,7 @@ exports.seed = function(knex, Promise) {
           note: 'Needs Penetrant Testing',
           requires_pt: 'true',
           requires_xray: 'false',
-          image_url:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnm9_q-jllkU7og0yBont_TQu_q2L0sRzxGEepDxuYFB93gQe0VQ',
+          image_url: 'https://imgur.com/a/HU8iXrB',
           project_id: 1
         },
         {
@@ -30,7 +29,7 @@ exports.seed = function(knex, Promise) {
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
-          image_url: 'http://ceresist.com/wp-content/uploads/P9040046.jpg',
+          image_url: 'https://imgur.com/a/KOAhiD5',
           project_id: 1
         },
         {
@@ -39,7 +38,7 @@ exports.seed = function(knex, Promise) {
           note: '',
           requires_pt: 'false',
           requires_xray: 'false',
-          image_url: 'https://pbs.twimg.com/media/DmfahyEXgAA3Y2S.jpg',
+          image_url: 'https://imgur.com/a/wJ6dOnv',
           project_id: 1
         }
       ]);

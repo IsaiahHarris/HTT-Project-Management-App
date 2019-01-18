@@ -9,7 +9,8 @@ exports.seed = function(knex, Promise) {
           id: 1,
           username: 'admin',
           password:
-            '$2b$12$HueRLBiASdSjLQA.EC9P6O3NeA0OTAGCl/22O.t2axPDe.oZPOJTO'
+            '$2b$12$HueRLBiASdSjLQA.EC9P6O3NeA0OTAGCl/22O.t2axPDe.oZPOJTO',
+          image_url: 'https://imgur.com/a/CO3gm7b'
         }
       ]);
     });

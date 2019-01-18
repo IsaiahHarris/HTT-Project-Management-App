@@ -10,8 +10,7 @@ exports.seed = function(knex, Promise) {
           title: 'Campbell Industrial New Plant',
           image_url:
             'https://media.bizj.us/view/img/1671291/par-petroleum122713*750xx600-338-0-23.jpg',
-          auditor_id: 1,
-          user_id: 1
+          auditor_id: 1
         }
       ]);
     });
