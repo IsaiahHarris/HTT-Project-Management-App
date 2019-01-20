@@ -16,9 +16,9 @@ class NavBar extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav>
-              <LinkContainer to="/projects">
+              <LinkContainer to="/project">
                 <NavItem className="nav-item" eventKey={1}>
-                  Projects
+                  Project
                 </NavItem>
               </LinkContainer>
               <LinkContainer to="/technicians">
