@@ -4,43 +4,49 @@
     font-size: 34px;
     padding: 10px;
     font-weight: 900;
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
   }
   .body-container {
     display: flex;
     flex-direction: column;
     .image-container {
-      widgh: 100%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       .project-img {
-        height: 350px;
-        width: 650px;
+        height: 375px;
+        width: 820px;
+        @media (max-width: 767px) {
+          height: 300px;
+          width: 600px;
+        }
       }
     }
     .spool-header {
       font-size: 26px;
-      margin-top: 40px;
-      margin-bottom: 10px;
+      margin-top: 22px;
+      margin-bottom: 15px;
       font-weight: 900;
       @media (max-width: 767px) {
-        font-size: 20px;
+        font-size: 22px;
       }
     }
     .spool-pieces-container {
       display: flex;
       justify-content: center;
-
+      width: 100%;
       .spool-pieces {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 60%;
         @media (max-width: 767px) {
           width: 80%;
         }
         .faulty-spool-piece {
           display: flex;
-          width: fit-content;
           flex-direction: column;
           align-items: center;
           height: 85px;
@@ -60,6 +66,10 @@
           }
           .note {
             font-size: 20px;
+
+            @media (max-width: 767px) {
+              font-size: 16px;
+            }
           }
           .spool-piece-img-container {
             .spool-piece-img {
@@ -71,10 +81,13 @@
         }
         .spool-piece {
           display: flex;
-          width: fit-content;
           flex-direction: column;
           align-items: center;
           height: 85px;
+          width: 15vw;
+          @media (max-width: 767px) {
+            width: 20vw;
+          }
           .spool-piece-title {
             font-size: 22px;
             font-weight: 900;
@@ -92,21 +105,28 @@
           }
           .note {
             font-size: 20px;
+
+            @media (max-width: 767px) {
+              font-size: 16px;
+            }
           }
           .faulty-spool-piece-img-container {
             border: 2px solid red;
             border-radius: 5px;
             padding: 2px;
             .spool-piece-img {
-              height: 65px;
-              width: 65px;
+              height: 75px;
+              width: 75px;
               background-size: 100% 100%;
             }
           }
           .spool-piece-img-container {
+            border: 2px solid green;
+            border-radius: 5px;
+            padding: 2px;
             .spool-piece-img {
-              height: 65px;
-              width: 65px;
+              height: 75px;
+              width: 75px;
               background-size: 100% 100%;
             }
           }

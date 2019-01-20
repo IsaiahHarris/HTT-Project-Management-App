@@ -37,9 +37,9 @@ class NavBar extends Component {
               </NavDropdown>
             </Nav>
             <Nav pullRight>
-              <NavItem eventKey={1} href="/login">
-                Login
-              </NavItem>
+              <LinkContainer to="/login">
+                <NavItem eventKey={1}>Login</NavItem>
+              </LinkContainer>
               <NavItem eventKey={2} href="#">
                 Contact
               </NavItem>

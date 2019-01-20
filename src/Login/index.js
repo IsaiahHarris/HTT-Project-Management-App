@@ -42,7 +42,7 @@ class Login extends Component {
           <i className="fa fa-user" />
           <input type="password" placeholder="Password" />
           <i className="fa fa-key" />
-          <a href="#">Forgot your password?</a>
+          <a href="#">Don't have an account? Register now.</a>
           <button>
             <i className="spinner" />
             <span className="state">Log in</span>

@@ -10,7 +10,7 @@ exports.seed = function(knex, Promise) {
           username: 'shad',
           password:
             '$2b$12$HueRLBiASdSjLQA.EC9P6O3NeA0OTAGCl/22O.t2axPDe.oZPOJTO',
-          image_url: 'https://imgur.com/a/CO3gm7b',
+          image_url: 'https://imgur.com/K3K7S7R.png',
           project_id: 1
         },
         {
@@ -18,7 +18,7 @@ exports.seed = function(knex, Promise) {
           username: 'ben',
           password:
             '$2b$12$HueRLBiASdSjLQA.EC9P6O3NeA0OTAGCl/22O.t2axPDe.oZPOJTO',
-          image_url: 'https://imgur.com/a/9XNUBDX',
+          image_url: 'https://imgur.com/0tysaFA.png',
           project_id: 1
         }
       ]);
