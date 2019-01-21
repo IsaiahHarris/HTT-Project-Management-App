@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { loadTechnicians } from '../actions';
 class Technicians extends Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     this.props.loadTechnicians();
   }
