@@ -1,11 +1,15 @@
 .projects-container {
   font-family: 'Lato', sans-serif;
+  height: 100%;
+  @media (min-height: 900px) {
+    padding-top: 5%;
+  }
   .header {
-    font-size: 34px;
+    font-size: 36px;
     padding: 10px;
     font-weight: 900;
     @media (max-width: 767px) {
-      font-size: 30px;
+      font-size: 32px;
     }
   }
   .body-container {
@@ -26,12 +30,12 @@
       }
     }
     .spool-header {
-      font-size: 26px;
+      font-size: 28px;
       margin-top: 22px;
       margin-bottom: 15px;
       font-weight: 900;
       @media (max-width: 767px) {
-        font-size: 22px;
+        font-size: 24px;
       }
     }
     .spool-pieces-container {

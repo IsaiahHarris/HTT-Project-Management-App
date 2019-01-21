@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Login.scss';
 import $ from 'jquery';
-
+import { Link } from 'react-router-dom';
 let working = false;
 $('.login').on('submit', function(e) {
   e.preventDefault();
@@ -38,14 +38,18 @@ class Login extends Component {
       <div className="wrapper">
         <form className="login">
           <p className="title">Log in</p>
+
           <input type="text" placeholder="Username" autoFocus />
           <i className="fa fa-user" />
           <input type="password" placeholder="Password" />
           <i className="fa fa-key" />
-          <a href="#">Don't have an account? Register now.</a>
+
+          <a href="/project">Don't have an account? Register now.</a>
           <button>
             <i className="spinner" />
-            <span className="state">Log in</span>
+            <a href="/project" className="state">
+              Log in
+            </a>
           </button>
         </form>
       </div>

@@ -40,7 +40,7 @@ class NavBar extends Component {
               <LinkContainer to="/login">
                 <NavItem eventKey={1}>Login</NavItem>
               </LinkContainer>
-              <NavItem eventKey={2} href="#">
+              <NavItem eventKey={2} href="">
                 Contact
               </NavItem>
             </Nav>
