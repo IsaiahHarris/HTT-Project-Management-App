@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PageHeader class="head">HTT Project Management App</PageHeader>
+        <PageHeader className="head">HTT Project Management App</PageHeader>
         <Navbar />
         <MainContainer />
       </div>
