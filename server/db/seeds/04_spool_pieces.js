@@ -11,35 +11,35 @@ exports.seed = function(knex, Promise) {
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
-          image_url: 'http://ceresist.com/wp-content/uploads/P9040046.jpg',
+          image_url: 'https://i.imgur.com/fIII5tR.png',
           project_id: 1
         },
+
         {
           id: 2,
-          title: 'Spool Piece 2',
-          note: 'Needs Penetrant Testing',
-          requires_pt: 'true',
-          requires_xray: 'false',
-          image_url:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnm9_q-jllkU7og0yBont_TQu_q2L0sRzxGEepDxuYFB93gQe0VQ',
-          project_id: 1
-        },
-        {
-          id: 3,
           title: 'Spool Piece 3',
           note: 'Needs X-Ray',
           requires_pt: 'false',
           requires_xray: 'true',
-          image_url: 'http://ceresist.com/wp-content/uploads/P9040046.jpg',
+          image_url: 'https://i.imgur.com/fIII5tR.png',
           project_id: 1
         },
         {
-          id: 4,
+          id: 3,
           title: 'Spool Piece 4',
           note: '',
           requires_pt: 'false',
           requires_xray: 'false',
-          image_url: 'https://pbs.twimg.com/media/DmfahyEXgAA3Y2S.jpg',
+          image_url: 'https://imgur.com/a2no639.png',
+          project_id: 1
+        },
+        {
+          id: 4,
+          title: 'Spool Piece 2',
+          note: 'Needs PT',
+          requires_pt: 'true',
+          requires_xray: 'false',
+          image_url: 'https://i.imgur.com/Evbc8WK.png',
           project_id: 1
         }
       ]);

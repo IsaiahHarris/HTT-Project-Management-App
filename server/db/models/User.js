@@ -10,7 +10,7 @@ class User extends bookshelf.Model {
   }
 
   projects() {
-    return this.hasMany('Project', 'user_id');
+    return this.belongsTo('Project', 'project_id');
   }
 }
 

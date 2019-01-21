@@ -13,8 +13,8 @@ class Project extends bookshelf.Model {
     return this.belongsTo('Auditor', 'auditors_id');
   }
 
-  userProjects() {
-    return this.belongsTo('User', 'user_id');
+  users() {
+    return this.hasMany('User', 'project_id');
   }
 
   spoolPieces() {

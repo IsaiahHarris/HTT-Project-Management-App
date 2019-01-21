@@ -47,13 +47,6 @@ class Projects extends Component {
                         piece.requires_pt === 'false' && (
                           <div className="spool-piece">
                             <div className="spool-piece-img-container">
-                              {/* <div
-                                className="spool-piece-img"
-                                style={{
-                                  backgroundImage:
-                                  'url(' + piece.image_url + ')'
-                                }}
-                              /> */}
                               <Image
                                 responsive
                                 rounded
@@ -73,13 +66,7 @@ class Projects extends Component {
                       {(piece.requires_xray === 'true' ||
                         piece.requires_pt === 'true') && (
                         <div className="spool-piece">
-                          <div className="spool-piece-img-container">
-                            {/* <div
-                              className="spool-piece-img"
-                              style={{
-                                backgroundImage: 'url(' + piece.image_url + ')'
-                              }}
-                            /> */}
+                          <div className="faulty-spool-piece-img-container">
                             <Image
                               responsive
                               rounded
